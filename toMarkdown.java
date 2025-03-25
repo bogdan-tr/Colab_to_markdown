@@ -1,11 +1,11 @@
 //Author: Bogdan Trigubov
 //Date: March 2025
-//Description: Class that converts a python file (pasted into MagicConverter.txt) into properly formatted markdown (result replaces what was pasted in MagicConverter.txt). Instance of this class is created in MC.java and is necessary to run the converter. To run the converter, type javac MC.java and java MC. 
+//Description: Class that converts a python file (pasted into toMarkdown.txt) into properly formatted markdown (result replaces what was pasted in toMarkdown.txt). Instance of this class is created in toMd.java and is necessary to run the converter. 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.FileReader;
-import java.io.IOException;
 import java.io.FileWriter;
+import java.io.IOException;
 import java.util.ArrayList;
 
 public class toMarkdown {
@@ -22,7 +22,7 @@ public class toMarkdown {
             String string;
             if(i==0){
                 string = (linesList.get(i)).replace("\"\"\"", "# " );
-                String watermark = "\nAutomatically converted to markdown by **MagicConverter** _(by Bogdan Trigubov)_";
+                String watermark = "\nAutomatically converted to markdown by **toMarkdown** _(by Bogdan Trigubov)_";
                 string = string + watermark;
             }else if(indexOf_updateIndexList < updateIndexList.size() && i == updateIndexList.get(indexOf_updateIndexList)){
                 if(indexOf_updateIndexList%2 == 0){ //even
