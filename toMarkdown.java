@@ -11,8 +11,18 @@ import java.util.ArrayList;
 public class toMarkdown {
     private ArrayList<String> linesList;
     private ArrayList<String> outputList;
+    private String language;
+
+    //Default constructor
     public toMarkdown(String fileName){
         this.linesList = readFile(fileName);
+        this.language = "python";
+    }
+    
+    //Constructor for custom language
+    public toMarkdown(String fileName, String language){
+        this.linesList = readFile(fileName);
+        this.language = language;
     }
 
     public void invert(ArrayList<Integer> updateIndexList){
@@ -26,7 +36,7 @@ public class toMarkdown {
                 string = string + watermark;
             }else if(indexOf_updateIndexList < updateIndexList.size() && i == updateIndexList.get(indexOf_updateIndexList)){
                 if(indexOf_updateIndexList%2 == 0){ //even
-                    string = convertPython(linesList.get(i));
+                    string = convertPython(linesList.get(i), language);
                 }else{ //odd
                     string = convert(linesList.get(i));
                 }
@@ -76,8 +86,8 @@ public class toMarkdown {
         String newText = line.replace("\"\"\"", "\n```\n");
         return newText;
     }
-    public static String convertPython(String line){ //convert string with """ component to \n``` python
-        String newText = line.replace("\"\"\"", "\n``` python");
+    public static String convertPython(String line, String language){ //convert string with """ component to \n``` python
+        String newText = line.replace("\"\"\"", "\n``` "+language);
         return newText;
     }
     public void print(){
@@ -114,7 +124,7 @@ public class toMarkdown {
         }
         //WRITER
     public void write(String fileName){
-        try{
+         try{
             BufferedWriter writer = new BufferedWriter(new FileWriter(fileName));
             if((linesList.get(linesList.size()-1)).contains("\"\"\"")){ //if last string is a """
             for(int i=0; i<outputList.size()-2; i++){
@@ -133,8 +143,7 @@ public class toMarkdown {
         e.printStackTrace();
         }
     }
-             
-    }
+}
 
 
 
