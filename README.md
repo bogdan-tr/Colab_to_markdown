@@ -9,7 +9,7 @@ The project can be run locally by following these steps:
 git clone https://github.com/bogdan-tr/Colab_to_markdown
 ```
 2. Download your Google Colab or Jupyter Notebook as a .py file.
-3. Copy and paste the contents of the .py file into MagicConverter.txt
+3. Copy and paste the contents of the .py file into toMarkdown.txt
 5. Compile and run:
 ``` sh
 javac toMd.java
