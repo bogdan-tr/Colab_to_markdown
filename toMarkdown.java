@@ -87,7 +87,7 @@ public class toMarkdown {
         return newText;
     }
     public static String convertPython(String line, String language){ //convert string with """ component to \n``` python
-        String newText = line.replace("\"\"\"", "\n``` "+language);
+        String newText = line.replace("\"\"\"", "\n```"+language);
         return newText;
     }
     public void print(){
