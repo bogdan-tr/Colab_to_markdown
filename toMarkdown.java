@@ -83,7 +83,7 @@ public class toMarkdown {
         return updateIndexList;
     }
     public static String convert(String line){ //convert string with """ component to \n```\n
-        String newText = line.replace("\"\"\"", "\n```\n");
+        String newText = line.replace("\"\"\"", "\n```\n\n");
         return newText;
     }
     public static String convertPython(String line, String language){ //convert string with """ component to \n``` python
