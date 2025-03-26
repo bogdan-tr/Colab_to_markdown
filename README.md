@@ -35,7 +35,7 @@ If no command line arguments are passed, Python is the default language for the 
 ``` sh
 java toMd Julia
 ```
-_The code blocks will in the Julia language_
+_The code blocks will be in the Julia language._
 
 A second command line argument can be passed (literally anything) to make the output passed to NewtoMarkdown.txt instead of overwriting toMarkdown.txt. Please note that language must be specified first.
 
