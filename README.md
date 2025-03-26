@@ -47,5 +47,7 @@ _The code blocks will be in Python and the output will be in NewtoMarkdown.txt. 
 
 ## Possible Future Updates
 - Develop a front-end interface to make the program more user-friendly.
-- Add a command line argument where the user can specify the language of the code blocks. This way the program would support other languages, not just Python. 
+
+## Contact
+LinkedIn - (Bogdan Trigubov)[www.linkedin.com/in/bogdan-trigubov-bt3g]
 
