@@ -4,10 +4,12 @@ Program that reformats Python (and other language) files automatically generated
 ## Reformat Example
 
 ### Before processing
-![Before Screenshot](https://github.com/user-attachments/assets/8d5b21bb-75d4-4cf0-aecf-1786e428f199)
+![Before Processing Screenshot](https://github.com/user-attachments/assets/c2ea87d2-807d-49e0-8e27-8e4694095ef4)
+
 
 ### After processing
-![After Screenshot](https://github.com/user-attachments/assets/3e907a16-4511-4239-ad57-37f721c673bd)
+![After Processing Screenshot ](https://github.com/user-attachments/assets/4443be8a-1466-4e76-92e7-95999c76ccb6)
+
 
 
 
