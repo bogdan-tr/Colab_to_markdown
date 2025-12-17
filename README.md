@@ -113,6 +113,8 @@ chmod +x uninstall.sh
 ```
 ## Contact
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin&logoColor=white)](www.linkedin.com/in/bogdan-trigubov-bt3g)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/bogdan-trigubov-bt3g)
+
+
 
 
