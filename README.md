@@ -22,51 +22,6 @@ With a clean, intuitive GUI and just a few clicks, you can now convert auto-gene
 - **Convenient and easy to use**: just type `tomd` in the terminal.
 - **Multi-Language Support**: Support for Python, Julia, R, and more.
 
-## Reformat Example
-
-### Before processing
-
-<img width="714" height="927" alt="before" src="https://github.com/user-attachments/assets/7cfb9957-a81b-44d8-8e41-b994355681f7" />
-
-### After processing
-
-<img width="738" height="940" alt="after" src="https://github.com/user-attachments/assets/bddee0ff-25d7-4ca5-8664-e97d03041fed" />
-
-## How it works
-
-**Input:**
-
-```python
-"""
-# My Project
-This is my documentation
-"""
-
-import pandas as pd
-
-"""
-## Section 1
-Some explanation here
-"""
-
-def my_function():
-    pass
-```
-
-**Output:**
-
-````md
-# My Project 
-This is my documentation
-```python 
- import pandas as pd 
-``` 
-## Section 1 
-Some explanation here 
-```python 
-def my_function(): pass 
-```
-````
 ## Requirements
 
 - **Java JDK 11+**
@@ -111,9 +66,56 @@ cd Colab_to_markdown
 chmod +x uninstall.sh
 ./uninstall.sh
 ```
+## Reformat Example
+
+### Before processing
+
+<img width="714" height="927" alt="before" src="https://github.com/user-attachments/assets/7cfb9957-a81b-44d8-8e41-b994355681f7" />
+
+### After processing
+
+<img width="738" height="940" alt="after" src="https://github.com/user-attachments/assets/bddee0ff-25d7-4ca5-8664-e97d03041fed" />
+
+## How it works
+
+**Input:**
+
+```python
+"""
+# My Project
+This is my documentation
+"""
+
+import pandas as pd
+
+"""
+## Section 1
+Some explanation here
+"""
+
+def my_function():
+    pass
+```
+
+**Output:**
+
+````md
+# My Project 
+This is my documentation
+```python 
+ import pandas as pd 
+``` 
+## Section 1
+Some explanation here 
+```python 
+def my_function(): pass 
+```
+````
+
 ## Contact
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/bogdan-trigubov-bt3g)
+
 
 
 
